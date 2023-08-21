@@ -6,21 +6,22 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class About extends AppCompatActivity {
-    private Toolbar toolbar;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about);
 
-        toolbar = findViewById(R.id.myToolBar);
+
 
         TextView myTextView = findViewById(R.id.info);
-        myTextView.setText("The app is for the people who loves butterflies and moths. More information to follow... ");
+        myTextView.setText("The app is for the people who loves butterflies and moths, but also for the person that just need the facts.");
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
@@ -33,8 +34,10 @@ public class About extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item){
         switch (item.getItemId()){
             case R.id.about:
-                //Toast.makeText(this, "About are pressed", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(this, MainActivity.class);
+                Toast.makeText(this, "You are already here", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.start:
+                Intent i = new Intent(About.this, MainActivity.class);
                 startActivity(i);
                 break;
         }

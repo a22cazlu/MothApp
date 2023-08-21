@@ -2,8 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
     <item
-        android:title="About"
-        android:id="@+id/about"
+        android:title="Start"
+        android:id="@+id/start"
         app:showAsAction="never"/>
+
+    <item
+    android:title="About"
+    android:id="@+id/about"
+    app:showAsAction="never"/>
 </menu>

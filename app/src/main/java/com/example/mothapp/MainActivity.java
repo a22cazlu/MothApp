@@ -27,15 +27,11 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
     private final List<Moth> location = new ArrayList<>();
     private final List<Moth> size = new ArrayList<>();
 
-    private Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        toolbar = findViewById(R.id.myToolBar);
-
-        //setSupportActionBar(toolbar);
 
         new JsonTask(this).execute(JSON_URL);
     }
@@ -76,6 +72,9 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
                 //Toast.makeText(this, "About are pressed", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(MainActivity.this, About.class);
                 startActivity(i);
+                break;
+            case R.id.start:
+                Toast.makeText(this, "You are already here", Toast.LENGTH_SHORT).show();
                 break;
         }
         return super.onOptionsItemSelected(item);
