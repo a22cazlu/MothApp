@@ -9,4 +9,12 @@ Det tog och strulade lite i arbetsmiljön då den tyckte att min building-tool v
 Uppgiften var rolig då jag fick lära mig en del under arbetet och känner att jag fick en djupare förstålse av många delar då jag fick gå in lite djupare på varje del.
 
 Bilder på den färdiga appen om fjärillar och malar:
-![](screen.png)
+
+![](start.png)
+**Bild 1:** MainActivity
+
+![](menu.png)
+**Bild 2:** Meny
+
+![](about.png)
+**Bild 3:** About
